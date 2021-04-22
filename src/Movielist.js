@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Movie from './Movie';
 
 const Movielist = () => {
 
@@ -15,7 +16,7 @@ const Movielist = () => {
     },
     {
       name: 'Shichinin no Samurai',
-      price: '&#165;19',
+      price: '$32',
       id: 3
     }
   ])
@@ -23,7 +24,7 @@ const Movielist = () => {
   return (
     <div>
       {movies.map(movie => (
-        <h2>{ movie.name }</h2>
+        <Movie name={movie.name} price={movie.price} key={movie.id}/>
       ))}
       
     </div>
