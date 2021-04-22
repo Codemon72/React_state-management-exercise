@@ -22,11 +22,10 @@ const Movielist = () => {
   ])
 
   return (
-    <div>
+    <div className="movielist">
       {movies.map(movie => (
         <Movie name={movie.name} price={movie.price} key={movie.id}/>
       ))}
-      
     </div>
   )
 }
