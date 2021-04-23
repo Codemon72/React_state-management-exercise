@@ -1,12 +1,15 @@
 import Movielist from './Movielist';
 import Nav from './Nav';
+import {MovieProvider} from './MovieContext';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Movielist />
-    </div>
+    <MovieProvider>
+      <div className="App">
+        <Nav />
+        <Movielist />
+      </div>
+    </MovieProvider>
   );
 }
 

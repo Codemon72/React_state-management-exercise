@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Movie = ({ name, price }) => {
+const Movie = ({ name, year }) => {
   return (
     <div className="movie">
       <h2>{name}</h2>
-      <p>{price}</p>
+      <p>{year}</p>
     </div>
   )
 }
