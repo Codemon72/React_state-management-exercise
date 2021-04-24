@@ -1,5 +1,5 @@
 import {useContext, useState} from 'react'
-import MovieContext from './MovieContext'
+import {MovieContext} from './MovieContext'
 
 const AddMovieForm = () => {
 
@@ -17,22 +17,29 @@ const AddMovieForm = () => {
 
   const addMovie = (e) => {
     e.preventDefault()
-    setMovies(prevMovies => [...prevMovies, { 
+    setMovies(blib => [...blib, { 
       name: addFormState.name, 
       year: addFormState.year
       }
     ])
+    setAddFormState({
+      name: '',
+      year: ''
+    })
   }
   return (
     <form onSubmit={addMovie}>
       <input 
         type="text" 
         placeholder="Movie Name"
-        name="name"onChange={handleInputChange}/>
+        name="name" 
+        value={addFormState.name}
+        onChange={handleInputChange}/>
       <input 
         type="text" 
         placeholder="Movie Year"
         name="year" 
+        value={addFormState.year}
         onChange={handleInputChange}/>
       <input type="submit" />
     </form>
