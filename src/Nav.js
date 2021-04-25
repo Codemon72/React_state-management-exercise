@@ -1,8 +1,8 @@
-import React, {useContext} from 'react';
-import {MovieContext} from './MovieContext';
+import { useContext } from 'react';
+import { MovieContext } from './MovieContext';
 
 const Nav = () => {
-  const {movies} = useContext(MovieContext);
+  const { movies } = useContext(MovieContext);
 
   return (
     <nav>
@@ -12,4 +12,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default Nav;

@@ -1,9 +1,9 @@
-import {useContext, useState} from 'react'
-import {MovieContext} from './MovieContext'
+import { useContext, useState } from 'react';
+import { MovieContext } from './MovieContext';
 
 const AddMovieForm = () => {
 
-  const {setMovies} = useContext(MovieContext);
+  const { setMovies } = useContext(MovieContext);
 
   const [addFormState, setAddFormState] = useState({
     name: '',
@@ -46,4 +46,4 @@ const AddMovieForm = () => {
   )
 }
 
-export default AddMovieForm
+export default AddMovieForm; 

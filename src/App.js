@@ -1,6 +1,6 @@
 import Movielist from './Movielist';
 import Nav from './Nav';
-import {MovieProvider} from './MovieContext';
+import { MovieProvider } from './MovieContext';
 
 function App() {
   return (

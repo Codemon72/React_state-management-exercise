@@ -1,10 +1,10 @@
-import {useContext} from 'react';
+import { useContext } from 'react';
 import Movie from './Movie';
 import AddMovieForm from './AddMovieForm';
-import {MovieContext} from './MovieContext';
+import { MovieContext } from './MovieContext';
 
 const Movielist = () => {
-  const {movies} = useContext(MovieContext)
+  const { movies } = useContext(MovieContext)
 
   return (
     <div className="movielist">
@@ -16,4 +16,4 @@ const Movielist = () => {
   )
 }
 
-export default Movielist
+export default Movielist;

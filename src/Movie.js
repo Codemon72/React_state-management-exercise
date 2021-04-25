@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Movie = ({ name, year }) => {
   return (
     <div className="movie">
@@ -9,4 +7,4 @@ const Movie = ({ name, year }) => {
   )
 }
 
-export default Movie
+export default Movie;
