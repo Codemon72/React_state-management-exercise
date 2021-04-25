@@ -3,7 +3,7 @@ import {MovieContext} from './MovieContext'
 
 const AddMovieForm = () => {
 
-  const [movies, setMovies] = useContext(MovieContext);
+  const {setMovies} = useContext(MovieContext);
 
   const [addFormState, setAddFormState] = useState({
     name: '',

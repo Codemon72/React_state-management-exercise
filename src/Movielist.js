@@ -4,7 +4,7 @@ import AddMovieForm from './AddMovieForm';
 import {MovieContext} from './MovieContext';
 
 const Movielist = () => {
-  const [movies] = useContext(MovieContext)
+  const {movies} = useContext(MovieContext)
 
   return (
     <div className="movielist">
